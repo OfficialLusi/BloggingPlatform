@@ -1,0 +1,98 @@
+﻿<Page x:Class="BloggingPlatform_FE.Views.WritePostView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BloggingPlatform_FE.Views" xmlns:viewmodels="clr-namespace:BloggingPlatform_FE.ViewModels"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="WritePostView">
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0" Background="LightGreen">
+            <StackPanel Margin="10">
+                <Button Content="Home" Command="{Binding HomeButton}" Margin="5"></Button>
+                <Button Content="Write a post" Command="{Binding WritePostButton}" Margin="5"></Button>
+                <Button Content="My posts" Command="{Binding SeeMyPostButton}" Margin="5"></Button>
+                <Button Content="Exit" Command="{Binding ExitButton}" Margin="5"></Button>
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" Background="Pink">
+                <TextBlock Text="Write a post page" 
+                           HorizontalAlignment="Center" 
+                           VerticalAlignment="center">
+                </TextBlock>
+            </Grid>
+
+            <Grid Grid.Row="1" Background="Orange">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.Column="0">
+                        <TextBlock Text="Post Title:" 
+                                   FontSize="15" 
+                                   VerticalAlignment="Center" 
+                                   HorizontalAlignment="Left" 
+                                   Margin="15,15,0,15" 
+                                   Width="70">
+                        </TextBlock>
+                    </Grid>
+
+                    <Grid Grid.Column="1">
+                        <TextBox Text="{Binding PostTitle, UpdateSourceTrigger=PropertyChanged}" 
+                                 FontSize="15"
+                                 VerticalAlignment="Center" 
+                                 Margin="0,10,10,10"></TextBox>
+                    </Grid>
+
+                </Grid>
+
+            </Grid>
+
+            <Grid Grid.Row="2" Background="AliceBlue">
+                <StackPanel>
+                    <TextBlock Text="Post content:" Margin="10,10,10,0"></TextBlock>
+                    <ScrollViewer VerticalScrollBarVisibility="Auto" 
+                                  HorizontalScrollBarVisibility="Auto"
+                                  Margin="10,0,10,10">
+                        <TextBox Text="{Binding PostContent, UpdateSourceTrigger=PropertyChanged}"
+                                 Height="150"
+                                 FontSize="15"
+                                 Margin="5">
+                        </TextBox>
+                    </ScrollViewer>
+                    <TextBlock Text="Tags: " Margin="10"></TextBlock>
+                    <TextBox Text="{Binding PostTags, UpdateSourceTrigger=PropertyChanged}"
+                             Height="20"
+                             FontSize="15"
+                             Margin="15,0,15,0">
+                    </TextBox>
+                    <TextBlock Text="{Binding ErrorText}" Margin="15" HorizontalAlignment="Center">
+                    </TextBlock>
+                </StackPanel>
+            </Grid>
+
+            <Grid Grid.Row="3" Background="AliceBlue">
+                <Button Content="Insert Post" Command="{Binding InsertPostButton}" Width="70" Height="20"></Button>
+            </Grid>
+
+        </Grid>
+
+    </Grid>
+</Page>

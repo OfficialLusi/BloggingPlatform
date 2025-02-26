@@ -1,0 +1,50 @@
+{
+  "httpconfig": {
+    "routes": [
+      {
+        "requestname": "AddUser",
+        "urlname": "https://localhost:30000/api/BloggingPlatform/AddUser"
+      },
+      {
+        "requestname": "UpdateUser",
+        "urlname": "https://localhost:30000/api/BloggingPlatform/UpdateUser"
+      },
+      {
+        "requestname": "DeleteUser",
+        "urlname": "https://localhost:30000/api/BloggingPlatform/DeleteUser/{userGuid}"
+      },
+      {
+        "requestname": "GetUserByGuid",
+        "urlname": "https://localhost:30000/api/BloggingPlatform/GetUserByGuid/{userGuid}"
+      },
+      {
+        "requestname": "GetAllUsers",
+        "urlname": "https://localhost:30000/api/BloggingPlatform/GetAllUsers"
+      },
+      {
+        "requestname": "AddBlogPost",
+        "urlname": "https://localhost:30000/api/BloggingPlatform/AddBlogPost"
+      },
+      {
+        "requestname": "UpdateBlogPost",
+        "urlname": "https://localhost:30000/api/BloggingPlatform/UpdateBlogPost"
+      },
+      {
+        "requestname": "DeleteBlogPost",
+        "urlname": "https://localhost:30000/api/BloggingPlatform/DeleteBlogPost/{blogPostGuid}"
+      },
+      {
+        "requestname": "GetBlogPostByGuid",
+        "urlname": "https://localhost:30000/api/BloggingPlatform/GetBlogPostByGuid/{blogPostGuid}"
+      },
+      {
+        "requestname": "GetAllBlogPosts",
+        "urlname": "https://localhost:30000/api/BloggingPlatform/GetAllBlogPosts"
+      },
+      {
+        "requestname": "AuthenticateUser",
+        "urlname": "https://localhost:30000/api/Authentication/AuthenticateUser"
+      }
+    ]
+  }
+}
