@@ -25,8 +25,11 @@ This library streamlines development, reduces code duplication, and enhances con
 
 ## Technology Stack
 Backend: C# with .NET 8 API
+
 Frontend: WPF with MVVM design pattern
+
 Testing: Custom test project for automated testing (xUnit)
+
 Custom Library: A self-developed library used to handle shared operations between backend and frontend
 
 ## Project Structure
