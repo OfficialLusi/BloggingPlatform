@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\c-sharp_Utils\LusiUtilsLibrary\LusiUtilsLibrary.csproj" />
+    <ProjectReference Include="E:\repositories\zPersonale\c-sharp_Utils\LusiUtilsLibrary\LusiUtilsLibrary.csproj" />
   </ItemGroup>
 
 </Project>

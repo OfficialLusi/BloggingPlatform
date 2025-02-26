@@ -52,3 +52,6 @@ Houses reusable components and utilities that facilitate operations across the a
 This project demonstrates a robust approach to building a personal blogging platform by leveraging modern technologies and architectural patterns. 
 The integration of a cleanly architected backend with a well-structured WPF frontend, complemented by comprehensive testing and a custom shared library, 
 results in a scalable and maintainable solution ready for further enhancements.
+
+
+Project idea taken from roadmap sh backend developer projects: https://roadmap.sh/projects/blogging-platform-api

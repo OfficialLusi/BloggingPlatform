@@ -106,8 +106,6 @@ public class EditPostViewModel
 
     private async Task Edit()
     {
-        // todo continuare qua
-
         if (_postTitle == string.Empty && _postContent == string.Empty && _postTags == string.Empty)
         {
             _logger.LogError("EditPostViewModel - Title, content or tags are empty");

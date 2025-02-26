@@ -1,16 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <UseWPF>true</UseWPF>
-  </PropertyGroup>
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UseWPF>true</UseWPF>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\c-sharp_Utils\LusiUtilsLibrary\LusiUtilsLibrary.csproj" />
-    <ProjectReference Include="..\BloggingPlatform_BE\BloggingPlatform_BE.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="E:\repositories\zPersonale\c-sharp_Utils\LusiUtilsLibrary\LusiUtilsLibrary.csproj" />
+		<ProjectReference Include="..\BloggingPlatform_BE\BloggingPlatform_BE.csproj" />
+		<ProjectReference Include="..\BloggingPlatform_TEST\BloggingPlatform_TEST.csproj" />
+	</ItemGroup>
 
 </Project>

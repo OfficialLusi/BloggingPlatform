@@ -135,18 +135,8 @@ public class PersonalPostViewModel : INotifyPropertyChanged
 
         if (param is BlogPostDto blogPostToEdit)
         {
-            //ApiResponse<BlogPostDto> response = await _requestService.GetBlogPostByGuid(blogPostToEdit.PostGuid);
-
-            //if(response.StatusCode == HttpStatusCode.OK)
-            //{
             _memoryService.SetCurrentPost(blogPostToEdit);
             navigationService.NavigateTo("EditPost");
-            //}
-            //else
-            //{
-            //    _logger.LogError("PersonalPostViewModel - Error retrieving post by guid")
-
-            //}
         }
     }
 
