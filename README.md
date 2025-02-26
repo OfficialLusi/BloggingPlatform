@@ -30,7 +30,7 @@ Frontend: WPF with MVVM design pattern
 
 Testing: Custom test project for automated testing (xUnit)
 
-Custom Library: A self-developed library used to handle shared operations between backend and frontend
+Custom Library: A self-developed library used to handle shared operations between backend and frontend: https://github.com/OfficialLusi/c-sharp_Utils.git
 
 ## Project Structure
 ### API Layer:
@@ -46,7 +46,7 @@ Contains a suite of tests to validate the functionality of both the API and the 
 This ensures reliability and aids in future refactoring efforts.
 
 ### Shared Library:
-Houses reusable components and utilities that facilitate operations across the application, reducing redundancy and improving overall code quality.
+Houses reusable components and utilities that facilitate operations across the application, reducing redundancy and improving overall code quality. https://github.com/OfficialLusi/c-sharp_Utils.git
 
 # Conclusion
 This project demonstrates a robust approach to building a personal blogging platform by leveraging modern technologies and architectural patterns. 
